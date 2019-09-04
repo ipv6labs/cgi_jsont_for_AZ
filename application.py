@@ -18,7 +18,7 @@ def hello():
 
 @app.route("/cgi-bin/time")
 def exec_time():
-    result_time = datetime.datetime.today()
+    result_time = time.strftime('%a %b %d %X %Y %Z')
     return result_time
 
 @app.route("/cgi-bin/jst")
