@@ -19,7 +19,7 @@ def hello():
 @app.route("/cgi-bin/time")
 def exec_time():
     result_time = datetime.now()
-    return print(result_time)
+    return result_time
 
 @app.route("/cgi-bin/jst")
 def exec_jst():
@@ -28,7 +28,7 @@ def exec_jst():
 @app.route("/cgi-bin/ntp")
 def exec_ntp():
     result_ntp = "{0:.3f}".format(time.time() + 2208988800)
-    return print(result_ntp)
+    return result_ntp
 
 @app.route("/cgi-bin/json")
 def exec_json():
