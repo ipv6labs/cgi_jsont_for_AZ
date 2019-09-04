@@ -33,7 +33,7 @@ def exec_ntp():
 
 @app.route("/cgi-bin/json")
 def exec_json():
-    result = {
+    result_json = {
       "id": platform.node(),
       "os": platform.system(),
     "arch": platform.machine(),
@@ -43,18 +43,8 @@ def exec_json():
     "next": print_next,
     "step": print_step
     }
-    return jsonify(result)
+    return jsonify(result_json)
 
 @app.route("/cgi-bin/jsont")
 def jsont():
-    result_jsont = {
-      "id": platform.node(),
-      "os": platform.system(),
-    "arch": platform.machine(),
-      "it": 0.000,
-      "st": "{0:.3f}".format(time.time()),
-    "leep": print_leep,
-    "next": print_next,
-    "step": print_step
-    }
-    return result_jsont
+    return print ('jsont( {\n} )')
