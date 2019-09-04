@@ -4,7 +4,6 @@ import platform
 
 from datetime import datetime
 from socket import gethostname
-from datetime import datetime, timedelta, timezone
 
 from flask import Flask, jsonify
 app = Flask(__name__)
@@ -17,19 +16,17 @@ print_step = '1'
 def hello():
     return "README https://www.example.jp/"
 
-@app.route("/ntp")
-def _exec_ntp():
-    return "EXEC ntp!"
-
 @app.route("/cgi-bin/time")
 def exec_time():
-    JST = timezone(timedelta(hours=+9), 'JST')
-    print_time = datetime.now(JST)
-    return print_time
+    return datetime.now()
 
 @app.route("/cgi-bin/jst")
 def exec_jst():
     return "{0:.3f}".format(time.time())
+
+@app.route("/cgi-bin/ntp")
+def exec_ntp():
+    return "{0:.3f}".format(time.time() + 2208988800)
 
 @app.route("/cgi-bin/json")
 def exec_json():
@@ -59,4 +56,4 @@ def jsont():
     "next": print_next,
     "step": print_step
     }
-    return jsonify(result)
+    return result
