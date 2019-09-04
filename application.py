@@ -23,7 +23,8 @@ def exec_time():
 
 @app.route("/cgi-bin/jst")
 def exec_jst():
-    return "{0:.3f}".format(time.time())
+    result_jst = "{0:.3f}".format(time.time())
+    return result_jst
 
 @app.route("/cgi-bin/ntp")
 def exec_ntp():
@@ -36,7 +37,7 @@ def exec_json():
       "id": platform.node(),
       "os": platform.system(),
     "arch": platform.machine(),
-      "it": 0.000,
+      "it": "{0:.3f}".format(0.000),
       "st": "{0:.3f}".format(time.time()),
     "leep": print_leep,
     "next": print_next,
@@ -44,9 +45,7 @@ def exec_json():
     }
     return jsonify(result)
 
-
-
-@app.route("/jsont")
+@app.route("/cgi-bin/jsont")
 def jsont():
     result_jsont = {
       "id": platform.node(),
@@ -58,4 +57,4 @@ def jsont():
     "next": print_next,
     "step": print_step
     }
-    return print(result_jsont)
+    return result_jsont
