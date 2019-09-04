@@ -21,7 +21,7 @@ def jsont():
     result = {
       "id": platform.node(),
       "os": platform.system(),
-    "arch": platform.machine()
+    "arch": platform.machine(),
       "it": 0.000,
       "st": "{0:.3f}".format(time.time()),
     "leep": print_leep,
