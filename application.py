@@ -1,12 +1,12 @@
-from flask import Flask
-app = Flask(__name__)
-
 import time
 import os
 import platform
 
 from datetime import datetime
 from socket import gethostname
+
+from flask import Flask, jsonify
+app = Flask(__name__)
 
 
 @app.route("/")
@@ -15,5 +15,9 @@ def hello():
 
 @app.route("/jsont")
 def jsont():
-    #return "jsont run"
-    print(' "pf": "'+platform.system()+' '+platform.machine()+'",')
+    _my_pf_sys = platform.system()
+    result = {
+      "pf": _my_pf_sys,
+    "hoge": 1
+    }
+    return jsonify(result)
