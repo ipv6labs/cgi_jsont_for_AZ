@@ -17,7 +17,8 @@ def hello():
 def jsont():
     _my_pf_sys = platform.system()
     result = {
-      "pf": platform.system(),
+      "it": 0,
+      "pf": platform.system() platform.machine(),
     "hoge": 1
     }
     return jsonify(result)
