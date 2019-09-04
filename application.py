@@ -24,9 +24,8 @@ def _exec_ntp():
 def _exec_time():
     return "EXEC time!"
 
-@app.route("/jst")
+@app.route("/cgi-bin/jst")
 def exec_jst():
-    #print_jst = "{0:.3f}".format(time.time())
     return "{0:.3f}".format(time.time())
 
 @app.route("/jsont")
