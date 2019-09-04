@@ -15,9 +15,9 @@ def hello():
 
 @app.route("/jsont")
 def jsont():
-    #_my_pf_sys = platform.system()
+    _my_pf_sys = platform.system()
     result = jsont( {
-      "pf": platform.system(),
+      "pf": _my_pf_sys,
     "hoge": 1
     } )
     return jsonify(result)
