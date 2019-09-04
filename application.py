@@ -18,8 +18,9 @@ def hello():
 
 @app.route("/jsont")
 def jsont():
+    _jsont = "jsont ("
     _my_pf_sys = print(platform.system()+' '+platform.machine())
-    result = {
+    result = _jsont {
       "it": 0.000,
       "pf": _my_pf_sys,
       "st": "{0:.3f}".format(time.time()),
