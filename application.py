@@ -26,8 +26,8 @@ def _exec_time():
 
 @app.route("/jst")
 def exec_jst():
-    print_jst = "{0:.3f}".format(time.time())
-    return print_jst
+    #print_jst = "{0:.3f}".format(time.time())
+    return "{0:.3f}".format(time.time())
 
 @app.route("/jsont")
 def jsont():
