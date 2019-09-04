@@ -8,6 +8,9 @@ from socket import gethostname
 from flask import Flask, jsonify
 app = Flask(__name__)
 
+print_leep = '36'
+print_next = '1483228800'
+print_step = '1'
 
 @app.route("/")
 def hello():
@@ -15,10 +18,12 @@ def hello():
 
 @app.route("/jsont")
 def jsont():
-    _my_pf_sys = platform.system()
+    _my_pf_sys = print(platform.system()+' '+platform.machine())
     result = {
       "it": 0,
-      "pf": platform.system() platform.machine(),
-    "hoge": 1
+      "pf": _my_pf_sys,
+    "leep": print_leep,
+    "next": print_next,
+    "step": print_step
     }
     return jsonify(result)
