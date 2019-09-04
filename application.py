@@ -18,13 +18,14 @@ def hello():
 
 @app.route("/jsont")
 def jsont():
-    _my_pf_sys = print(platform.system()+' '+platform.machine())
     result = {
+      "id": platform.node(),
+      "os": platform.system(),
+    "arch": platform.machine()
       "it": 0.000,
-      "pf": _my_pf_sys,
       "st": "{0:.3f}".format(time.time()),
     "leep": print_leep,
     "next": print_next,
     "step": print_step
     }
-    return "jsont(" jsonify(result)
+    return jsonify(result)
