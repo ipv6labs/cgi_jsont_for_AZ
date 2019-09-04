@@ -18,7 +18,8 @@ def hello():
 
 @app.route("/cgi-bin/time")
 def exec_time():
-    return datetime.now()
+    result_time = datetime.now()
+    return print(result_time)
 
 @app.route("/cgi-bin/jst")
 def exec_jst():
@@ -26,7 +27,8 @@ def exec_jst():
 
 @app.route("/cgi-bin/ntp")
 def exec_ntp():
-    return "{0:.3f}".format(time.time() + 2208988800)
+    result_ntp = "{0:.3f}".format(time.time() + 2208988800)
+    return print(result_ntp)
 
 @app.route("/cgi-bin/json")
 def exec_json():
@@ -46,7 +48,7 @@ def exec_json():
 
 @app.route("/jsont")
 def jsont():
-    result = {
+    result_jsont = {
       "id": platform.node(),
       "os": platform.system(),
     "arch": platform.machine(),
@@ -56,4 +58,4 @@ def jsont():
     "next": print_next,
     "step": print_step
     }
-    return result
+    return print(result_jsont)
