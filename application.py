@@ -52,5 +52,5 @@ def exec_json():
 
 @app.route("/cgi-bin/jsont")
 def jsont():
-    result_jsont = "json( {\n \"id\": \"platform.node()\",\n } )\n"
+    result_jsont = "json( {\n \"leep\": \""print_leep"\",\n } )\n"
     return result_jsont
