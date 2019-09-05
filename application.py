@@ -28,8 +28,10 @@ def exec_jst():
 
 @app.route("/cgi-bin/ntp")
 def exec_ntp():
-    result_ntp = "{0:.3f}".format(time.time() + 2208988800)
-    return result_ntp
+    "{0:.3f}".format(time.time() + 2208988800)
+    #result_ntp = "{0:.3f}".format(time.time() + 2208988800)
+    #return result_ntp
+
 
 @app.route("/cgi-bin/json")
 def exec_json():
@@ -45,7 +47,7 @@ def exec_json():
     }
     return jsonify(result_json)
 
+
 @app.route("/cgi-bin/jsont")
 def jsont():
-    resalt_jsont = print ('jsont( {\n} )')
-    return result_jsont
+    print ('jsont( {\n} )')
