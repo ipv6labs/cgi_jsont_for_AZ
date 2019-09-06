@@ -54,5 +54,13 @@ http(s)://{application_name}.azurewebsites.net/cgi-bin/json
 
 DEMO: http://time.ipv6labs.jp/cgi-bin/json
 
- * JSONP is NO Support.
+JSONP is NO Support.
+
+
+#### Other options:
+
+- Check platform http(s)://{application_name}.azurewebsites.net/platform
+
+- Check Python version http(s)://{application_name}.azurewebsites.net/python_version
+
 
