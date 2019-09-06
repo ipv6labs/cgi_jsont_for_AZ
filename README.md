@@ -13,6 +13,16 @@
 
 Home -> App Service   Click Add
 
-#### Instance
+#### Instance:
 
 select "Code", runtime stack is "Python 3.7", and Operation system is "Linux".
+
+#### Deployment:
+
+Click Deploy Center, set up.
+
+- Sauce: GitHub
+- Build: App Service Kudu engine
+- Repository: https://github.com/ipv6labs/cgi_jsont_for_AZ
+-- Branch: "master" is stable
+-- Branch: "test_branch" is unstable
