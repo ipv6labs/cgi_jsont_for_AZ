@@ -19,6 +19,11 @@ def exec_null():
     return "OK"
 
 
+@app.route("/readme")
+def exec_readme():
+    return "See also https://github.com/ipv6labs/cgi_jsont_for_AZ/blob/master/README.md"
+
+
 @app.route("/platform")
 def exec_platform():
     return platform.platform()
