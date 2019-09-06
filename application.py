@@ -24,7 +24,7 @@ def exec_platform():
     return platform.platform()
 
 
-@app.route("/platform")
+@app.route("/python_version")
 def exec_python_version():
     return platform.python_version()
 
