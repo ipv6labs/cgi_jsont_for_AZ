@@ -30,26 +30,29 @@ Click Deploy Center, set up.
 
 Access to http(s)://{application_name}.azurewebsites.net/
 
-### Get POSIX/UNIX time
+#### Get POSIX/UNIX time:
 
 http(s)://{application_name}.azurewebsites.net/cgi-bin/jst
 
 DEMO: http://time.ipv6labs.jp/cgi-bin/jst
 
-### Get NTP time
+#### Get NTP time:
 
 http(s)://{application_name}.azurewebsites.net/cgi-bin/ntp
 
 DEMO: http://time.ipv6labs.jp/cgi-bin/ntp
 
-### Get time for human
+#### Get time for human:
 
 http(s)://{application_name}.azurewebsites.net/cgi-bin/time
 
 DEMO: http://time.ipv6labs.jp/cgi-bin/time
 
+#### Get JSON format:
 
+http(s)://{application_name}.azurewebsites.net/cgi-bin/json
 
+DEMO: http://time.ipv6labs.jp/cgi-bin/json
 
-
+ * JSONP is NO Support.
 
