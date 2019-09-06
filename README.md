@@ -24,5 +24,5 @@ Click Deploy Center, set up.
 - Sauce: GitHub
 - Build: App Service Kudu engine
 - Repository: https://github.com/ipv6labs/cgi_jsont_for_AZ
--- Branch: "master" is stable
--- Branch: "test_branch" is unstable
+- - Branch: "master" is stable
+- - Branch: "test_branch" is unstable
