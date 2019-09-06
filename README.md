@@ -85,8 +85,8 @@ Command:
 $ ab -n 20000 -c 2000 http://time.ipv6labs.jp/cgi-bin/json
 ~~~
 
-|instances|    Performance|
 ----|---- 
+|instances|    Performance|
 |        2| 2,600+ req/sec|
 |        4| 4,200+ req/sec|
 |       10|11,000+ req/sec|
