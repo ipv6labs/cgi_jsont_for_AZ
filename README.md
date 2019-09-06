@@ -73,3 +73,6 @@ JSONP is NO Support.
 - Check Python version http(s)://{application_name}.azurewebsites.net/python_version
 
 
+## Scale by Azure
+
+
