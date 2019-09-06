@@ -15,12 +15,12 @@ print_step = '1'
 
 
 @app.route("/")
-def hello():
+def exec_null():
     return "OK"
 
 
 @app.route("/platform")
-def hello():
+def exec_platform():
     return platform.platform()
 
 
