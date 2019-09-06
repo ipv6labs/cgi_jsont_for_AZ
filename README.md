@@ -1,6 +1,15 @@
 # cgi_jsont_for_AZ
 
 
+## Overview
+
+Original design https://www.nict.go.jp/JST/http.html
+
+1. Cloned by Python https://github.com/ipv6labs/cgi_jsont
+
+2. Deployment to Azure App Service
+
+
 ## Environment
 
 - Azure App Service on Linux    https://docs.microsoft.com/ja-jp/azure/app-service/containers/app-service-linux-intro
