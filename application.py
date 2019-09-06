@@ -24,6 +24,11 @@ def exec_platform():
     return platform.platform()
 
 
+@app.route("/platform")
+def exec_python_version():
+    return platform.python_version()
+
+
 @app.route("/cgi-bin/time")
 def exec_time():
     result_time = time.strftime('%a %b %d %X %Y %Z')
