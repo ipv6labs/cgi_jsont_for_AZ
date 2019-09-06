@@ -91,6 +91,8 @@ $ ab -n 20000 -c 2000 http://time.ipv6labs.jp/cgi-bin/json
 |        4| 4,200+ req/sec|
 |       10|11,000+ req/sec|
 
+Money is power, Plan: P3V2 about $700 ...
+
 
 
 
