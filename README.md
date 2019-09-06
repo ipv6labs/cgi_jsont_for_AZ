@@ -26,7 +26,30 @@ Click Deploy Center, set up.
 - Repository: https://github.com/ipv6labs/cgi_jsont_for_AZ
 - Branch: "master"
 
-### Usage
+## Usage
 
 Access to http(s)://{application_name}.azurewebsites.net/
+
+### Get POSIX/UNIX time
+
+http(s)://{application_name}.azurewebsites.net/cgi-bin/jst
+
+DEMO: http://time.ipv6labs.jp/cgi-bin/jst
+
+### Get NTP time
+
+http(s)://{application_name}.azurewebsites.net/cgi-bin/ntp
+
+DEMO: http://time.ipv6labs.jp/cgi-bin/ntp
+
+### Get time for human
+
+http(s)://{application_name}.azurewebsites.net/cgi-bin/time
+
+DEMO: http://time.ipv6labs.jp/cgi-bin/time
+
+
+
+
+
 
