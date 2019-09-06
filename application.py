@@ -8,13 +8,20 @@ from socket import gethostname
 from flask import Flask, jsonify
 app = Flask(__name__)
 
+# Sep 05 2019
 print_leep = '36'
 print_next = '1483228800'
 print_step = '1'
 
+
 @app.route("/")
 def hello():
-    return "README https://www.example.jp/"
+    return "OK"
+
+
+@app.route("/platform")
+def hello():
+    return platform.platform()
 
 
 @app.route("/cgi-bin/time")
