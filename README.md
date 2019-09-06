@@ -80,7 +80,7 @@ JSONP is NO Support.
   - RAM: 14 GB
   - Storage: 250GB
 
-'''$ ab -n 20000 -c 2000 http://time.ipv6labs.jp/cgi-bin/json'''
+~~~ $ ab -n 20000 -c 2000 http://time.ipv6labs.jp/cgi-bin/json ~~~
 
 
 
