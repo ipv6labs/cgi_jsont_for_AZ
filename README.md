@@ -73,6 +73,10 @@ JSONP is NO Support.
 - Check Python version http(s)://{application_name}.azurewebsites.net/python_version
 
 
+## Pull requests
+
+Pull requests receive in "test_branch".
+
 ## Scale by Azure
 
 - Plan: P3V2 up to 20 instances
@@ -92,7 +96,3 @@ $ ab -n 20000 -c 2000 http://time.ipv6labs.jp/cgi-bin/json
 |       10|11,000+ req/sec|
 
 Money is power, Plan: P3V2 about $700 ...
-
-
-
-
