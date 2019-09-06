@@ -75,4 +75,12 @@ JSONP is NO Support.
 
 ## Scale by Azure
 
+- Plan: P3V2 up to 20 instances
+  - Core: 4
+  - RAM: 14 GB
+  - Storage: 250GB
+
+'''$ ab -n 20000 -c 2000 http://time.ipv6labs.jp/cgi-bin/json'''
+
+
 
