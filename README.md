@@ -45,11 +45,21 @@ http(s)://{application_name}.azurewebsites.net/cgi-bin/jst
 
 DEMO: http://time.ipv6labs.jp/cgi-bin/jst
 
+e.g.)
+'''
+1567995625.038
+'''
+
 #### Get NTP time:
 
 http(s)://{application_name}.azurewebsites.net/cgi-bin/ntp
 
 DEMO: http://time.ipv6labs.jp/cgi-bin/ntp
+
+e.g.)
+'''
+3776984489.287
+'''
 
 #### Get time for human:
 
