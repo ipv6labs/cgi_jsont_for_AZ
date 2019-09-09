@@ -46,6 +46,7 @@ http(s)://{application_name}.azurewebsites.net/cgi-bin/jst
 DEMO: http://time.ipv6labs.jp/cgi-bin/jst
 
 e.g.)
+
 '''
 1567995625.038
 '''
