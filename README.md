@@ -45,11 +45,21 @@ http(s)://{application_name}.azurewebsites.net/cgi-bin/jst
 
 DEMO: http://time.ipv6labs.jp/cgi-bin/jst
 
+e.g.)
+```
+1567995625.038
+```
+
 #### Get NTP time:
 
 http(s)://{application_name}.azurewebsites.net/cgi-bin/ntp
 
 DEMO: http://time.ipv6labs.jp/cgi-bin/ntp
+
+e.g.)
+```
+3776984489.287
+```
 
 #### Get time for human:
 
@@ -57,11 +67,30 @@ http(s)://{application_name}.azurewebsites.net/cgi-bin/time
 
 DEMO: http://time.ipv6labs.jp/cgi-bin/time
 
+e.g.)
+```
+Mon Sep 09 02:23:07 2019 UTC
+```
+
 #### Get JSON format:
 
 http(s)://{application_name}.azurewebsites.net/cgi-bin/json
 
 DEMO: http://time.ipv6labs.jp/cgi-bin/json
+
+e.g.)
+```
+{
+  "arch": "x86_64",
+  "id": "0807dd80a18d",
+  "it": "0.000",
+  "leep": "36",
+  "next": "1483228800",
+  "os": "Linux",
+  "st": "1567995866.138",
+  "step": "1"
+}
+```
 
 JSONP is NO Support.
 
