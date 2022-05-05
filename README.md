@@ -13,7 +13,7 @@ Original design https://www.nict.go.jp/JST/http.html
 ## Environment
 
 - Azure App Service on Linux    https://docs.microsoft.com/ja-jp/azure/app-service/containers/app-service-linux-intro
-- Python 3.7    https://docs.python.org/3/whatsnew/3.7.html
+- Python 3.9    https://docs.python.org/3/whatsnew/3.9.html
 
 
 ## Installation
@@ -24,7 +24,7 @@ Home -> App Service   Click Add
 
 #### Instance:
 
-select "Code", runtime stack is "Python 3.7", and Operation system is "Linux".
+select "Code", runtime stack is "Python 3.9", and Operation system is "Linux".
 
 #### Deployment:
 
@@ -54,7 +54,7 @@ e.g.)
 
 http(s)://{application_name}.azurewebsites.net/cgi-bin/ntp
 
-DEMO: http://time.ipv6labs.jp/cgi-bin/ntp
+DEMO: https://cgi-jsont.azurewebsites.net/cgi-bin/ntp
 
 e.g.)
 ```
@@ -65,7 +65,7 @@ e.g.)
 
 http(s)://{application_name}.azurewebsites.net/cgi-bin/time
 
-DEMO: http://time.ipv6labs.jp/cgi-bin/time
+DEMO: https://cgi-jsont.azurewebsites.net/cgi-bin/time
 
 e.g.)
 ```
@@ -76,7 +76,7 @@ Mon Sep 09 02:23:07 2019 UTC
 
 http(s)://{application_name}.azurewebsites.net/cgi-bin/json
 
-DEMO: http://time.ipv6labs.jp/cgi-bin/json
+DEMO: https://cgi-jsont.azurewebsites.net/cgi-bin/cgi-bin/json
 
 e.g.)
 ```
