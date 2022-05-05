@@ -43,7 +43,7 @@ Access to http(s)://{application_name}.azurewebsites.net/
 
 http(s)://{application_name}.azurewebsites.net/cgi-bin/jst
 
-DEMO: http://time.ipv6labs.jp/cgi-bin/jst
+DEMO: https://cgi-jsont.azurewebsites.net/cgi-bin/jst
 
 e.g.)
 ```
@@ -76,7 +76,7 @@ Mon Sep 09 02:23:07 2019 UTC
 
 http(s)://{application_name}.azurewebsites.net/cgi-bin/json
 
-DEMO: https://cgi-jsont.azurewebsites.net/cgi-bin/cgi-bin/json
+DEMO: https://cgi-jsont.azurewebsites.net/cgi-bin/json
 
 e.g.)
 ```
