@@ -50,6 +50,13 @@ e.g.)
 1567995625.038
 ```
 
+e.g.) Time sync check in CLI
+```
+$ /usr/gnu/bin/date -Is -d @`curl -s https://cgi-jsont.azurewebsites.net/cgi-bin/jst` ; /usr/gnu/bin/date -Is
+2025-02-24T06:16:09+09:00
+2025-02-24T06:16:09+09:00
+```
+
 #### Get NTP time:
 
 http(s)://{application_name}.azurewebsites.net/cgi-bin/ntp
